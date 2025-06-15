@@ -1,0 +1,45 @@
+:root {
+  --primary: #7857ff;
+  --accent: #ffb86c;
+  --background: #f6f6ff;
+  --foreground: #232136;
+  --border: #e0e0ff;
+}
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.app.dark {
+  --background: #232136;
+  --foreground: #f6f6ff;
+  --border: #393552;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - 64px);
+}
+
+.sidebar {
+  width: 240px;
+  border-right: 1px solid var(--border);
+  background: var(--background);
+}
+
+.editor-section {
+  flex: 1;
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-footer {
+  border-top: 1px solid var(--border);
+  background: var(--background);
+  height: 200px;
+}
